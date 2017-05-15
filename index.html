@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html ng-app="test-work">
+  <head>
+    <title>Test App</title>
+    <meta content="width=device-width,initial-scale=1" name=viewport>
+    <link rel="stylesheet" href="http://ajax.googleapis.com/ajax/libs/angular_material/1.1.0/angular-material.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.0.3/dist/leaflet.css"/>
+    <script src="https://unpkg.com/leaflet@1.0.3/dist/leaflet.js"></script>
+    <link rel="stylesheet" href="/style/style.css">
+    <base href="/">
+  </head>
+
+  <body ng-controller="MainCtrl as main">
+    <div ui-view></div>
+
+    <!-- ANGULAR -->      
+    <script src="/assets/angular/angular.min.js"></script>
+
+    <script src="http://ajax.googleapis.com/ajax/libs/angular_material/1.1.0/angular-material.min.js"></script>
+
+    <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular-animate.min.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular-aria.min.js"></script>
+
+    <!-- TRANSLATE -->      
+    <script src="/assets/angular-translate/angular-translate.js"></script>
+
+    <!-- NG MESSAGE -->      
+    <script src="/assets/angular-messages/angular-messages.js"></script>
+
+    <!-- UI-ROUTER -->    
+    <script src="/assets/angular-ui-router/release/angular-ui-router.min.js"></script>
+
+    <!-- WEBSQL -->    
+    <script src="/assets/angular-websql/angular-websql.js"></script>
+
+    <!-- MODULE -->
+    <script src="/app/app.js"></script>
+    <script src="/app/pages/site.module.js"></script>
+
+    <!-- SERVICES -->
+    <script src="/app/auth.service.js"></script>
+    
+    <!-- CONTROLLERS -->
+    <!--Pages-->
+    <script src="/app/pages/home/home.controller.js"></script>
+    <script src="/app/pages/login_page/login_page.controller.js"></script>
+    
+  </body>
+</html>

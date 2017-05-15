@@ -1,0 +1,22 @@
+<md-toolbar class="md-hue-2">
+  <div class="md-toolbar-tools">
+    <md-button class="md-icon-button hide_toolbutton" aria-label="Settings" ng-disabled="false">
+      <md-icon class="material-icons">menu</md-icon>
+    </md-button>
+
+    <h2 flex md-truncate>{{ 'TITLE' | translate }}</h2>
+      
+
+      <md-menu>
+        <md-button ng-click="$mdOpenMenu($event)">
+          {{vm.loginName}}
+        </md-button>
+        <md-menu-content>
+          <md-menu-item>
+            <md-button ng-click="vm.logout()">{{ 'LOGOUT' | translate }}</md-button>
+          </md-menu-item>
+        </md-menu-content>
+      </md-menu>
+
+  </div>
+</md-toolbar>
